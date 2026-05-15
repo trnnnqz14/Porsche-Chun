@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche Việt Nam - Xe Thể Thao Cao Cấp</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <svg width="120" height="40" viewBox="0 0 120 40">
+                        <text x="10" y="28" fill="#FF0033" font-size="24" font-weight="bold"
+                            font-family="Arial, sans-serif">PORSCHE</text>
+                    </svg>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="nav">
+                    <a href="dongxe.html" target="_self" class="nav-link">Các dòng xe</a>
+
+                    <a href="xemoi.html" target="_self" class="nav-link">Xe mới</a>
+
+                    <a href="trungtam.html" target="_self" class="nav-link">Trung tâm Porsche</a>
+
+                    <a href="dichvu.html" target="_self" class="nav-link">Dịch vụ</a>
+
+                    <a href="gioithieu.html" target="_self" class="nav-link">Về Porsche</a>
+
+                    <a href="tramsac.html" target="_self" class="nav-link">Trạm sạc Porsche</a>
+
+                    <a href="uudai.html" target="_self" class="nav-link">Chương trình ưu đãi</a>
+                </nav>
+
+                <!-- Action Icons -->
+                <div class="header-actions">
+                    <button class="icon-btn" aria-label="Tìm kiếm">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <button class="icon-btn" aria-label="Cài đặt">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 
+        2 0 1 1-2.83 2.83l-.06-.06a1.65 
+        1.65 0 0 0-1.82-.33 1.65 
+        1.65 0 0 0-1 1.51V21a2 
+        2 0 1 1-4 0v-.09a1.65 
+        1.65 0 0 0-1-1.51 1.65 
+        1.65 0 0 0-1.82.33l-.06.06a2 
+        2 0 1 1-2.83-2.83l.06-.06a1.65 
+        1.65 0 0 0 .33-1.82 1.65 
+        1.65 0 0 0-1.51-1H3a2 
+        2 0 1 1 0-4h.09a1.65 
+        1.65 0 0 0 1.51-1 1.65 
+        1.65 0 0 0-.33-1.82l-.06-.06a2 
+        2 0 1 1 2.83-2.83l.06.06a1.65 
+        1.65 0 0 0 1.82.33h0A1.65 
+        1.65 0 0 0 9 3.09V3a2 
+        2 0 1 1 4 0v.09a1.65 
+        1.65 0 0 0 1 1.51h0a1.65 
+        1.65 0 0 0 1.82-.33l.06-.06a2 
+        2 0 1 1 2.83 2.83l-.06.06a1.65 
+        1.65 0 0 0-.33 1.82v0A1.65 
+        1.65 0 0 0 20.91 11H21a2 
+        2 0 1 1 0 4h-.09a1.65 
+        1.65 0 0 0-1.51 1z"></path>
+                        </svg>
+                    </button>
+                    <button class="icon-btn" id="profileBtn" aria-label="Tài khoản">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </button>
+                    <!-- PROFILE POPUP -->
+
+                    <div class="profile-popup" id="profilePopup">
+
+                        <img src="images/avatar.jpg" alt="Avatar" class="profile-avatar">
+
+                        <h3>
+                            Trần Quang Trung
+                        </h3>
+
+                        <p>
+                            MSSV: DH52302154
+                        </p>
+
+                        <p>
+                            Lớp: D23_TH07
+                        </p>
+
+                        <p>
+                            Trường Đại học Công Nghệ Sài Gòn (STU)
+                        </p>
+
+                    </div>
+                    <button class="icon-btn" aria-label="Liên hệ">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/hero-911.jpg" alt="Porsche 911" class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Độc Bản. Kinh Điển. <br> <span class="text-red">Porsche 911 mới.</span>
+            </h1>
+            <p class="hero-subtitle">Trải nghiệm sức mạnh và đẳng cấp của biểu tượng thể thao huyền thoại</p>
+            <button class="btn-primary">Mua ngay</button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-indicator-border">
+                <div class="scroll-indicator-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sản Phẩm <span class="text-red">Nổi Bật</span></h2>
+                <p class="section-subtitle">Khám phá dòng xe Porsche cao cấp</p>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/porsche-911-carrera.jpg" alt="Porsche 911 Carrera">
+                        <div class="product-overlay"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Porsche 911 Carrera</h3>
+                        <div class="product-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <p class="product-price">8.500.000.000 VNĐ</p>
+                        <a href="911.html" target="_self" class="btn-buy">
+
+                            Mua ngay
+
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/porsche-718-cayman.jpg" alt="Porsche 718 Cayman">
+                        <div class="product-overlay"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Porsche 718 Cayman</h3>
+                        <div class="product-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <p class="product-price">4.200.000.000 VNĐ</p>
+                        <a href="718.html" target="_self" class="btn-buy">
+
+                            Mua ngay
+
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/porsche-taycan.jpg" alt="Porsche Taycan">
+                        <div class="product-overlay"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Porsche Taycan</h3>
+                        <div class="product-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <p class="product-price">6.800.000.000 VNĐ</p>
+                        <a href="taycan.html" target="_self" class="btn-buy">
+
+                            Mua ngay
+
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/porsche-macan.jpg" alt="Porsche Macan">
+                        <div class="product-overlay"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Porsche Macan</h3>
+                        <div class="product-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="product-price">3.500.000.000 VNĐ</p>
+                        <a href="macan.html" target="_self" class="btn-buy">
+
+                            Mua ngay
+
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/porsche-panamera.jpg" alt="Porsche Panamera">
+                        <div class="product-overlay"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Porsche Panamera</h3>
+                        <div class="product-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <p class="product-price">7.200.000.000 VNĐ</p>
+                        <a href="panamera.html" target="_self" class="btn-buy">
+
+                            Mua ngay
+
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/porsche-cayenne.jpg" alt="Porsche Cayenne">
+                        <div class="product-overlay"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Porsche Cayenne</h3>
+                        <div class="product-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <p class="product-price">5.800.000.000 VNĐ</p>
+                        <a href="cayenne.html" target="_self" class="btn-buy">
+
+                            Mua ngay
+
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/porsche-gt3.jpg" alt="Porsche 911 GT3">
+                        <div class="product-overlay"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Porsche 911 GT3</h3>
+                        <div class="product-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <p class="product-price">12.500.000.000 VNĐ</p>
+                        <button class="btn-buy">Mua ngay</button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/porsche-turbo-s.jpg" alt="Porsche 911 Turbo S">
+                        <div class="product-overlay"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Porsche 911 Turbo S</h3>
+                        <div class="product-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <p class="product-price">15.800.000.000 VNĐ</p>
+                        <button class="btn-buy">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Danh Mục <span class="text-red">Sản Phẩm</span></h2>
+                <p class="section-subtitle">Khám phá theo phong cách của bạn</p>
+            </div>
+
+            <div class="category-grid">
+                <!-- Category 1 -->
+                <div class="category-card">
+                    <img src="images/category-sports.jpg" alt="Thể Thao" class="category-image">
+                    <div class="category-overlay"></div>
+                    <div class="category-content">
+                        <h3 class="category-name">Thể Thao</h3>
+                        <p class="category-desc">Dòng xe thể thao hiệu suất cao</p>
+                        <button class="btn-outline">Xem thêm</button>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="category-card">
+                    <img src="images/category-luxury.jpg" alt="Thời Trang" class="category-image">
+                    <div class="category-overlay"></div>
+                    <div class="category-content">
+                        <h3 class="category-name">Thời Trang</h3>
+                        <p class="category-desc">Sang trọng và đẳng cấp</p>
+                        <button class="btn-outline">Xem thêm</button>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="category-card">
+                    <img src="images/category-suv.jpg" alt="Đường Phố" class="category-image">
+                    <div class="category-overlay"></div>
+                    <div class="category-content">
+                        <h3 class="category-name">Đường Phố</h3>
+                        <p class="category-desc">SUV mạnh mẽ cho đô thị</p>
+                        <button class="btn-outline">Xem thêm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Products -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header-with-nav">
+                <div>
+                    <h2 class="section-title">Sản Phẩm <span class="text-red">Bán Chạy</span></h2>
+                    <p class="section-subtitle">Xu hướng được yêu thích nhất</p>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="scrollLeft" aria-label="Cuộn trái">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn" id="scrollRight" aria-label="Cuộn phải">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="trending-container" id="trendingContainer">
+                <!-- Trending Product 1 -->
+                <div class="trending-card">
+                    <div class="trending-image">
+                        <img src="images/trending-gt3-rs.jpg" alt="Porsche 911 GT3 RS">
+                        <span class="badge badge-hot">HOT</span>
+                    </div>
+                    <div class="trending-info">
+                        <h3 class="trending-name">Porsche 911 GT3 RS</h3>
+                        <p class="trending-price">18.900.000.000 VNĐ</p>
+                        <button class="btn-buy">Xem chi tiết</button>
+                    </div>
+                </div>
+
+                <!-- Trending Product 2 -->
+                <div class="trending-card">
+                    <div class="trending-image">
+                        <img src="images/trending-taycan-turbo.jpg" alt="Porsche Taycan Turbo S">
+                        <span class="badge badge-new">MỚI</span>
+                    </div>
+                    <div class="trending-info">
+                        <h3 class="trending-name">Porsche Taycan Turbo S</h3>
+                        <p class="trending-price">9.800.000.000 VNĐ</p>
+                        <button class="btn-buy">Xem chi tiết</button>
+                    </div>
+                </div>
+
+                <!-- Trending Product 3 -->
+                <div class="trending-card">
+                    <div class="trending-image">
+                        <img src="images/trending-718-spyder.jpg" alt="Porsche 718 Spyder">
+                        <span class="badge badge-hot">HOT</span>
+                    </div>
+                    <div class="trending-info">
+                        <h3 class="trending-name">Porsche 718 Spyder</h3>
+                        <p class="trending-price">5.600.000.000 VNĐ</p>
+                        <button class="btn-buy">Xem chi tiết</button>
+                    </div>
+                </div>
+
+                <!-- Trending Product 4 -->
+                <div class="trending-card">
+                    <div class="trending-image">
+                        <img src="images/trending-panamera-turbo.jpg" alt="Porsche Panamera Turbo S">
+                        <span class="badge badge-trend">TREND</span>
+                    </div>
+                    <div class="trending-info">
+                        <h3 class="trending-name">Porsche Panamera Turbo S</h3>
+                        <p class="trending-price">11.200.000.000 VNĐ</p>
+                        <button class="btn-buy">Xem chi tiết</button>
+                    </div>
+                </div>
+
+                <!-- Trending Product 5 -->
+                <div class="trending-card">
+                    <div class="trending-image">
+                        <img src="images/trending-cayenne-turbo.jpg" alt="Porsche Cayenne Turbo GT">
+                        <span class="badge badge-hot">HOT</span>
+                    </div>
+                    <div class="trending-info">
+                        <h3 class="trending-name">Porsche Cayenne Turbo GT</h3>
+                        <p class="trending-price">8.900.000.000 VNĐ</p>
+                        <button class="btn-buy">Xem chi tiết</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Banner -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="promo-banner">
+                <div class="promo-pattern"></div>
+                <div class="promo-content">
+                    <h2 class="promo-title">Ưu Đãi Đặc Biệt Tháng Này</h2>
+                    <p class="promo-text">
+                        Giảm giá đến <span class="promo-percentage">20%</span> cho xe đang hot trong tháng
+                    </p>
+                    <p class="promo-detail">Áp dụng cho các dòng xe: 911 Carrera, Taycan, Macan</p>
+                    <button class="btn-promo">Khám phá ngay</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section section-dark">
+
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title">
+                    Liên Hệ <span class="text-red">Porsche</span>
+                </h2>
+
+                <p class="section-subtitle">
+                    Hãy để lại thông tin để chúng tôi tư vấn cho bạn.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+
+                <!-- RIGHT -->
+                <div class="contact-right">
+
+                    <form id="contactForm">
+
+                        <input type="text" id="name" placeholder="Nhập họ tên">
+
+                        <small id="nameError" class="error-text"></small>
+
+                        <input type="email" id="email" placeholder="Nhập email">
+
+                        <small id="emailError" class="error-text"></small>
+
+                        <textarea id="message" placeholder="Nhập nội dung liên hệ">
+                    </textarea>
+
+                        <small id="messageError" class="error-text"></small>
+
+                        <button type="submit" class="btn-primary">
+
+                            Gửi liên hệ
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- About -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Giới Thiệu</h3>
+                    <p class="footer-text">Porsche Việt Nam - Đại lý chính thức phân phối xe Porsche cao cấp, mang đến
+                        trải nghiệm lái xe thể thao đẳng cấp thế giới.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Youtube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Customer Support -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Hỗ Trợ Khách Hàng</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Câu hỏi thường gặp</a></li>
+                        <li><a href="#">Hướng dẫn mua xe</a></li>
+                        <li><a href="#">Bảo hành & Bảo dưỡng</a></li>
+                        <li><a href="#">Trung tâm dịch vụ</a></li>
+                        <li><a href="#">Liên hệ hỗ trợ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Policies -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Chính Sách</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Chính sách giao hàng</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Chính sách thanh toán</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Thông Tin Liên Hệ</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <div>
+                                <p class="contact-label">Văn phòng</p>
+                                <p class="contact-value">180 Cao Lỗ, Chánh Hưng, TP. Hồ Chí Minh</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <div>
+                                <p class="contact-label">Địa chỉ kho</p>
+                                <p class="contact-value">17 Ba Vân, Tân Bình, TP. Hồ Chí Minh</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <div>
+                                <p class="contact-label">Hotline</p>
+                                <p class="contact-value">0973 823 184</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <p class="contact-value">info@chunporsche.vn</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="newsletter">
+                <h3 class="newsletter-title">Đăng Ký Nhận Tin <span class="text-red">Khuyến Mãi</span></h3>
+                <p class="newsletter-subtitle">Nhận thông tin mới nhất về các chương trình ưu đãi và sản phẩm mới</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Nhập email của bạn" class="newsletter-input" required>
+                    <button type="submit" class="newsletter-btn">Đăng ký</button>
+                </form>
+            </div>
+
+            <!-- Copyright -->
+            <div class="copyright">
+                <p>© 2026 Porsche Việt Nam. Bảo lưu mọi quyền. | Thiết kế bởi Chun's Porsche Digital</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

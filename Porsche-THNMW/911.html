@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Porsche 911 Carrera
+    </title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <div class="header-content">
+
+                <div class="logo">
+
+                    <h2 class="text-red">
+                        PORSCHE
+                    </h2>
+
+                </div>
+
+                <nav class="nav">
+
+                    <a href="index.html" class="nav-link">
+
+                        Trang chủ
+
+                    </a>
+
+                    <a href="dongxe.html" class="nav-link">
+
+                        Các dòng xe
+
+                    </a>
+
+                    <a href="dichvu.html" class="nav-link">
+
+                        Dịch vụ
+
+                    </a>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- =========================
+         PRODUCT DETAIL
+    ========================== -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="product-detail-grid">
+
+                <!-- IMAGE -->
+
+                <div class="detail-image">
+
+                    <img src="images/porsche-911-carrera.jpg" alt="Porsche 911">
+
+                </div>
+
+                <!-- INFO -->
+
+                <div class="detail-info">
+
+                    <h1 class="detail-title">
+
+                        Porsche 911 Carrera
+
+                    </h1>
+
+                    <div class="product-rating">
+
+                        <span class="star filled">
+                            ★
+                        </span>
+
+                        <span class="star filled">
+                            ★
+                        </span>
+
+                        <span class="star filled">
+                            ★
+                        </span>
+
+                        <span class="star filled">
+                            ★
+                        </span>
+
+                        <span class="star filled">
+                            ★
+                        </span>
+
+                    </div>
+
+                    <h2 class="detail-price">
+
+                        8.500.000.000 VNĐ
+
+                    </h2>
+
+                    <p class="detail-desc">
+
+                        Porsche 911 Carrera là mẫu xe
+                        thể thao huyền thoại với hiệu suất
+                        mạnh mẽ, thiết kế sang trọng và
+                        trải nghiệm lái đỉnh cao.
+
+                    </p>
+
+                    <!-- SPECS -->
+
+                    <div class="specs-box">
+
+                        <h3>
+                            Thông số kỹ thuật
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Động cơ:
+                                3.0L Twin-Turbo
+                            </li>
+
+                            <li>
+                                Công suất:
+                                379 HP
+                            </li>
+
+                            <li>
+                                Tăng tốc 0-100:
+                                4.2 giây
+                            </li>
+
+                            <li>
+                                Tốc độ tối đa:
+                                293 km/h
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- BUTTON -->
+
+                    <button class="btn-primary openModal" data-service="Lái thử 911">
+
+                        ĐẶT MUA XE ONLINE
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         MODAL
+    ========================== -->
+
+    <div class="custom-modal" id="serviceModal">
+
+        <div class="modal-content-box">
+
+            <span class="close-modal" id="closeModal">
+
+                &times;
+
+            </span>
+
+            <h2 style="margin-bottom:20px;">
+
+                Đặt mua xe online
+
+            </h2>
+
+            <form id="modalForm">
+
+                <input type="text" id="modalName" placeholder="Họ tên">
+
+                <small id="modalNameError" class="error-text">
+                </small>
+
+                <input type="text" id="modalPhone" placeholder="Số điện thoại">
+
+                <small id="modalPhoneError" class="error-text">
+                </small>
+
+                <input type="email" id="modalEmail" placeholder="Email">
+
+                <small id="modalEmailError" class="error-text">
+                </small>
+
+                <button type="submit" class="btn-primary">
+
+                    Xác nhận thông tin
+
+                </button>
+
+                <p id="successMessage" class="success-message">
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
