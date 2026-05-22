@@ -504,3 +504,49 @@ if (profileBtn) {
     );
 
 }
+// ======================================
+// MOBILE MENU
+// ======================================
+
+const menuToggle =
+    document.getElementById("menuToggle");
+
+const mobileMenu =
+    document.getElementById("mobileMenu");
+
+if (menuToggle && mobileMenu) {
+
+    menuToggle.addEventListener(
+
+        "click",
+
+        () => {
+
+            mobileMenu.classList.toggle("active");
+
+        }
+
+    );
+
+    // AUTO CLOSE MENU
+
+    document.querySelectorAll(".nav-link")
+        .forEach(link => {
+
+            link.addEventListener(
+
+                "click",
+
+                () => {
+
+                    mobileMenu.classList.remove(
+                        "active"
+                    );
+
+                }
+
+            );
+
+        });
+
+}
